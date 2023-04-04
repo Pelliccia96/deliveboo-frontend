@@ -1,0 +1,54 @@
+@use "bootstrap/scss/bootstrap";
+@use "@fortawesome/fontawesome-free/css/all.min.css";
+
+/*****VARIABLES******/
+$primary: #c76262 ;
+$primary-darker: #b34d4d;
+$bg-cards: #f9fafa;
+
+
+/*****GENERALS******/
+::-webkit-scrollbar{
+    width: .9em;
+    height: .9em;
+}
+
+::-webkit-scrollbar-track{
+    background: white;
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(180deg,  #c76262, rgba(247, 241, 241, 0.705));
+    border-radius: 100vw;
+    border: .2em solid rgb(245, 245, 243);
+    transition: .3 linear .3;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(180deg, rgba(247, 241, 241, 0.705),  #c76262);   
+}
+
+/*****UTILITIES******/
+.custom-color{
+    color: $primary !important;
+}
+
+.custom-bg{
+    background-color:$primary !important;
+}
+
+.btn-custom{
+    background-color:$primary !important;
+    border-color:$primary !important;
+    color: #fff!important;
+    transition: all, .3s;
+    &:hover{
+        background-color: $primary-darker !important;
+        transform: scale(1.05);
+    }
+    &:active{
+        transform: scale(.95);
+    }
+}
